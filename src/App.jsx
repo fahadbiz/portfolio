@@ -51,14 +51,13 @@ const PortfolioRoutes = () => (
 );
 
 const App = () => {
-  useEffect(() => {
-    logEvent(analytics, "page_view", { page: "portfolio" });
-  }, []);
+  // useEffect(() => {
+  //   logEvent(analytics, "page_view", { page: "portfolio" });
+  // }, []);
 
   return (
     <Router>
       <SEO />
-      <Analytics/>
       <Routes>
         <Route
           path="/dashboard/*"
