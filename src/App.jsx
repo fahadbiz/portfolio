@@ -20,7 +20,7 @@ import Footer from "./components/Footer/Footer";
 import DashboardOverview from "./pages/Admin/DashboardOverview";
 import LoginPage from "./pages/Admin/LoginPage";
 import SEO from "../SEO";
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 
 const PortfolioRoutes = () => (
   <>
