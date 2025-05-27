@@ -1,0 +1,46 @@
+/* Flip Card Container */
+.certificate-card {
+    perspective: 1000px;
+  }
+  
+  /* Inner flip container */
+  .certificate-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  /* On hover, rotate inner container 180deg along Y-axis */
+  .certificate-card.group:hover .certificate-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front & Back faces */
+  .certificate-front,
+  .certificate-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Back face rotated 180deg so it's hidden initially */
+  .certificate-back {
+    transform: rotateY(180deg);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
