@@ -1,0 +1,146 @@
+/* ----- Overall Section ----- */
+.carousel-new-section {
+    height: 100vh;
+    background: linear-gradient(to right, #101820, #131313);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  
+  .carousel-new-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* ----- Container for Carousel ----- */
+  .carousel-new-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ----- Navigation Buttons ----- */
+  .carousel-nav-button {
+    background: rgba(0, 230, 118, 0.7);
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 1rem;
+    z-index: 200;
+    transition: background 0.3s;
+  }
+  .carousel-nav-button:hover {
+    background: #00e676;
+  }
+  .carousel-nav-button.left {
+    position: absolute;
+    left: 10px;
+  }
+  .carousel-nav-button.right {
+    position: absolute;
+    right: 10px;
+  }
+  
+  /* ----- 3D Carousel Styling ----- */
+  .carousel-new {
+    width: 100%;
+    height: 500px;
+    perspective: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ----- Carousel Items ----- */
+  .carousel-new-item {
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+  }
+  .carousel-new-item img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Reflection Effect */
+  .reflection {
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    transform: scaleY(-1);
+    opacity: 0.3;
+  }
+  .reflection img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    filter: blur(2px);
+  }
+  
+  /* ----- Fullscreen Modal Styling ----- */
+  .modal-overlay-new {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: zoom-out;
+  }
+  .modal-content-new {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: 0 auto;
+  }
+  .modal-content-new img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  .modal-close-button {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: #00e676;
+    color: #000;
+    font-size: 2rem;
+    line-height: 1;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 230, 118, 0.5);
+    transition: background 0.3s;
+  }
+  .modal-close-button:hover {
+    background: #00c767;
+  }
+  
